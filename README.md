@@ -2,7 +2,7 @@
 
 VGG19 · Neural Style Transfer · PyTorch · Gram Matrix · Total Variation Loss · Alpha Blending kullanılarak geliştirilen fotoğraf tabanlı stil aktarım sistemi.
 
-Bu proje, bir içerik görüntüsünün yapısını koruyarak başka bir referans stil görüntüsünün renk, ışık, kontrast ve atmosfer özelliklerini aktarmayı amaçlar. Klasik Neural Style Transfer yöntemleri çoğu zaman resim benzeri veya yapay görünümlü çıktılar üretirken, bu projede daha doğal ve fotoğraf benzeri sonuçlar elde etmek hedeflenmiştir.
+Bu proje, bir içerik görüntüsünün yapısını koruyarak başka bir referans stil görüntüsünün renk, ışık, kontrast ve atmosfer özelliklerini aktarmayı amaçlar. Klasik stil aktarım yöntemleri çoğu zaman resim benzeri veya yapay görünümlü çıktılar üretirken, bu projede daha doğal ve fotoğraf benzeri sonuçlar elde etmek hedeflenmiştir.
 
 ---
 
@@ -16,11 +16,16 @@ Bu proje, bir içerik görüntüsünün yapısını koruyarak başka bir referan
 - [Klasör Yapısı](#-klasör-yapısı)
 - [Kurulum](#️-kurulum)
 - [Kullanım](#-kullanım)
-- [Deney Parametreleri](#-deney-parametreleri)
+- [Deney Parametreleri](#️-deney-parametreleri)
 - [Çıktılar](#-çıktılar)
 - [Dosya Açıklamaları](#-dosya-açıklamaları)
+- [Derin Öğrenme Nerede Kullanılıyor?](#-derin-öğrenme-nerede-kullanılıyor)
+- [Makaledeki Yöntemden Farkı](#-makaledeki-yöntemden-farkı)
 - [Notlar ve Sınırlamalar](#-notlar-ve-sınırlamalar)
+- [Hata Yönetimi](#-hata-yönetimi)
+- [Kullanılan Teknolojiler](#-kullanılan-teknolojiler)
 - [Gelecek Geliştirmeler](#-gelecek-geliştirmeler)
+- [Sonuç](#-sonuç)
 
 ---
 
@@ -28,9 +33,9 @@ Bu proje, bir içerik görüntüsünün yapısını koruyarak başka bir referan
 
 Bu sistem, kullanıcının verdiği iki görsel üzerinden otomatik olarak stil aktarımı yapar:
 
-- **Content Image:** Yapısını, nesnelerini ve genel kompozisyonunu korumak istediğimiz ana görüntü.
-- **Style Image:** Renk paleti, ışık, kontrast ve atmosfer özelliklerini almak istediğimiz referans görüntü.
-- **Output Image:** Content görüntüsünün yapısını koruyan, style görüntüsünün görsel atmosferini taşıyan yeni görüntü.
+- **Content Image:** Yapısını, nesnelerini ve genel kompozisyonunu korumak istediğimiz ana görüntüdür.
+- **Style Image:** Renk paleti, ışık, kontrast ve atmosfer özelliklerini almak istediğimiz referans görüntüdür.
+- **Output Image:** Content görüntüsünün yapısını koruyan, style görüntüsünün görsel atmosferini taşıyan yeni görüntüdür.
 
 Örneğin gündüz çekilmiş bir doğa fotoğrafına, gün batımı temalı başka bir görselin sıcak renkleri ve ışık atmosferi aktarılabilir.
 
